@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import { HMSRoomProvider } from "@100mslive/react-sdk";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <HMSRoomProvider>
     <App />
-  </React.StrictMode>
+  </HMSRoomProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function
